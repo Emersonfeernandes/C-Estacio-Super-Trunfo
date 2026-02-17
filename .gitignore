@@ -1,0 +1,7 @@
+# Ignorar pasta do VS Code
+.vscode/
+sobreVariaveis/.vscode/
+
+# Ignorar arquivos executáveis
+*.exe
+sobreVariaveis/*.exe

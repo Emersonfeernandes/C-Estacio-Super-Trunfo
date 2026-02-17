@@ -15,8 +15,8 @@ int main(){
     getchar();  // limpa o ENTER do buffer
 
     printf("Digite o nome da cidade da carta 1: ");
-    fgets(C1cidade, 20, stdin);
-    C1cidade[strcspn(C1cidade, "\n")] = 0;
+    fgets(C1cidade, 20, stdin); // pegar cidades que não só um nome
+    C1cidade[strcspn(C1cidade, "\n")] = 0; // removendo a quebra de linha do fgets
 
     printf("Digite a população da cidade de acordo com o último senso da carta 1: ");
     scanf("%d", &C1populacao);
@@ -39,8 +39,8 @@ int main(){
     getchar();  // limpa o ENTER do buffer
 
     printf("Digite o nome da cidade da carta 2: ");
-    fgets(C2cidade, 20, stdin);
-    C2cidade[strcspn(C2cidade, "\n")] = 0;
+    fgets(C2cidade, 20, stdin); // pegar cidades que não só um nome
+    C2cidade[strcspn(C2cidade, "\n")] = 0; // removendo a quebra de linha do fgets
 
     printf("Digite a população da cidade de acordo com o último senso da carta 2: ");
     scanf("%d", &C2populacao);
@@ -54,6 +54,7 @@ int main(){
     printf("Qual é o PIB da cidade da carta 2? ");
     scanf("%f", &C2PIB);
 
+    // PRINTs DA CARTA 1
     printf("\nCarta 1\n");
     printf("Estado: %c\n", C1letra);
     printf("Código: %c%s\n", C1letra, C1estado);
@@ -63,6 +64,7 @@ int main(){
     printf("PIB: %.2f bilhões de reais\n", C1PIB);
     printf("Número de Pontos Turísticos: %d\n", C1pontosTuristico);
 
+    // PRINTs DA CARTA 2
     printf("\nCarta 2\n");
     printf("Estado: %c\n", C2letra);
     printf("Código: %c%s\n", C2letra, C2estado);

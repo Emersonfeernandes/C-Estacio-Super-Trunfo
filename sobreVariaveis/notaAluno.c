@@ -2,7 +2,7 @@
 
 int main(){
     char nome[20];
-    int idade, matricula; 
+    int idade, matricula;
     float altura; 
 
     printf("Qual é seu nome? ");

@@ -1,69 +1,80 @@
-# O que você vai fazer
+# Desafio Super Trunfo - Países - Cadastro das Cartas
 
+Bem-vindo ao desafio "Super Trunfo - Países"! No jogo Super Trunfo, os jogadores comparam as propriedades das cartas para determinar a mais forte. O tema deste Super Trunfo é "Países," onde você comparará as propriedades das cidades.
 
-Criar um programa em C que permita ao usuário inserir os dados de duas cartas do Super Trunfo. Para cada carta, o usuário deverá fornecer as seguintes informações:
+A empresa MateCheck contratou você para desenvolver a parte inicial do jogo, que consiste no cadastro das cartas.
 
- 
+O desafio está dividido em três níveis: Novato, Aventureiro e Mestre, com cada nível adicionando mais complexidade ao anterior. Você deve escolher qual desafio quer realizar.
 
-Estado: Uma letra de 'A' a 'H' (representando um dos oito estados). Tipo: char
- 
-Código da Carta: A letra do estado seguida de um número de 01 a 04 (ex: A01, B03). Tipo: char[] (um array de caracteres, ou string)
- 
-Nome da Cidade: O nome da cidade. Tipo: char[] (string)
- 
-População: O número de habitantes da cidade. Tipo: int
- 
-Área (em km²): A área da cidade em quilômetros quadrados. Tipo: float
- 
-PIB: O Produto Interno Bruto da cidade. Tipo: float
- 
-Número de Pontos Turísticos: A quantidade de pontos turísticos na cidade. Tipo: int
- 
+### 🚨 Atenção: 
+O nível Novato do desafio é focado apenas no cadastro das cartas, utilizando as funções scanf para ler os dados e printf para exibi-los.
 
-Após o usuário inserir os dados de cada carta, seu programa deve exibir na tela as informações cadastradas, de forma organizada e legível. Para cada carta, imprima cada informação em uma linha separada, com uma descrição clara. Por exemplo:
+## 🎮 Nível Novato
 
- 
+No nível Novato, você iniciará criando o sistema básico do jogo Super Trunfo com o tema "Países". As cartas serão divididas por estados, cada um com quatro cidades. 
 
-Carta 1:
+Cada país será dividido em oito estados, identificados pelas letras de A a H. Cada estado terá quatro cidades, numeradas de 1 a 4. A combinação da letra do estado e o número da cidade define o código da carta (por exemplo, A01, A02, B01, B02).
 
-Estado: A
+### 🚩 Objetivo:
+- Criar cartas representando cidades, contendo as seguintes propriedades:
+  - **População**
+  - **Área**
+  - **PIB**
+  - **Número de pontos turísticos**
+  
+### ⚙️ Funcionalidades do Sistema:
+- O sistema permitirá ao usuário cadastrar cartas de cidades, inserindo manualmente os dados via terminal de comando.
+- Após o cadastro, o sistema exibirá os dados de cada cidade de forma clara e organizada.
 
-Código: A01
+### 📥 Entrada e 📤 Saída de Dados:
+- O usuário insere os dados de cada carta interativamente.
+- Após o cadastro, os dados são exibidos com todas as propriedades da cidade, uma por linha.
 
-Nome da Cidade: São Paulo
+---
 
-População: 12325000
+## 🛡️ Nível Aventureiro
 
-Área: 1521.11 km²
+No nível Aventureiro, você expandirá o sistema para incluir propriedades calculadas, permitindo uma análise mais detalhada das cartas.
 
-PIB: 699.28 bilhões de reais
+### 🆕 Diferença em relação ao Nível Novato:
+- **Novas Propriedades Calculadas:**
+  - **Densidade Populacional:** População dividida pela área da cidade.
+  - **PIB per Capita:** PIB total dividido pela população.
 
-Número de Pontos Turísticos: 50
+### ⚙️ Funcionalidades do Sistema:
+- O sistema agora calculará automaticamente a Densidade Populacional e o PIB per Capita com base nos dados inseridos.
+- Essas novas propriedades serão adicionadas às informações exibidas para cada cidade.
 
- 
+### 📥 Entrada e 📤 Saída de Dados:
+- O usuário continua inserindo os dados de cada carta interativamente.
+- O sistema exibirá os dados, incluindo as novas propriedades calculadas, de forma clara e organizada.
 
-Carta 2:
+---
 
-Estado: B
+## 🏆 Nível Mestre
 
-Código: B02
+No nível Mestre, você implementará comparações entre as cartas, utilizando operadores relacionais e manipulando grandes números com precisão.
 
-Nome da Cidade: Rio de Janeiro
+### 🆕 Diferença em relação ao Nível Aventureiro:
+- **Comparação de Cartas:**
+  - O sistema permitirá ao usuário comparar duas cartas com base nas propriedades inseridas e calculadas.
+  - Cada carta terá um "Super Poder", que é a soma de todas as propriedades.
+  
+### ⚙️ Funcionalidades do Sistema:
+- O sistema utilizará operadores relacionais para determinar a carta vencedora com base nas propriedades comparadas.
+- A comparação considerará:
+  - **Densidade Populacional:** Vence a carta com menor valor.
+  - **Outras Propriedades:** Vence a carta com maior valor.
+- O resultado das comparações será exibido claramente para cada propriedade.
 
-População: 6748000
+### 📥 Entrada e 📤 Saída de Dados:
+- O usuário insere as cartas a serem comparadas.
+- O sistema exibe os resultados das comparações, indicando a carta vencedora para cada propriedade.
 
-Área: 1200.25 km²
+---
 
-PIB: 300.50 bilhões de reais
+Ao concluir todos os níveis, você terá criado um sistema incial para o jogo Super Trunfo, com funcionalidades de cadastro, cálculo e comparação de propriedades. 
 
-Número de Pontos Turísticos: 30    
+Boa sorte e divirta-se programando!
 
-
-# Requisitos funcionais
-
-
-O programa deve ler corretamente os dados de duas cartas do usuário via entrada padrão (teclado).
- 
-O programa deve armazenar os dados lidos em variáveis apropriadas.
- 
-O programa deve exibir os dados de cada carta na tela, formatados de forma clara e organizada, conforme o exemplo acima.
+Equipe de Ensino - MateCheck

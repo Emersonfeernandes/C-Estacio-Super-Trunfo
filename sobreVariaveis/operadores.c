@@ -19,6 +19,10 @@ int main() {
     printf("Multiplicacao (5 * 3): %d\n", multiplicacao);
     printf("Divisao inteira (10 / 3): %d\n", divisao);
 
+    float quociente = (float) a / b; // 'a' é explicitamente convertido para float
+ 
+    printf("Quociente: %.2f\n", quociente);
+
     printf("\n=== OPERADORES DE ATRIBUICAO ===\n");
 
     int x = 5;

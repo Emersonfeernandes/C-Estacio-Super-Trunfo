@@ -1,6 +1,16 @@
 #include <stdio.h>
 #include <string.h>
 
+// Função para entrada de dados
+void entradaDados() {
+    // código para a função entradaDados
+}
+ 
+// Função para exibir dados
+void saidaDados() {
+    // código para a função exibirMedia
+}
+
 int main(){
     char C1estado[4], C1cidade[20], C1letra, C2estado[4], C2cidade[20], C2letra;
     int C1populacao, C1pontosTuristico, C2populacao, C2pontosTuristico;

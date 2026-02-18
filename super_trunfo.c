@@ -1,14 +1,14 @@
 #include <stdio.h>
 #include <string.h>
 
-// Função para entrada de dados
-void entradaDados() {
-    // código para a função entradaDados
+// Função para Calcular o PIB per Capita
+float calcularPIBperCapita(float PIB, int populacao) {
+    return (float) PIB / populacao;
 }
  
-// Função para exibir dados
-void saidaDados() {
-    // código para a função exibirMedia
+// Função para Calcular a Densidade Populacional
+float calcularDensidade(int populacao, float area) {
+    return (float) populacao / area;
 }
 
 int main(){
@@ -73,6 +73,7 @@ int main(){
     printf("Área: %.2f km²\n", C1area);
     printf("PIB: %.2f bilhões de reais\n", C1PIB);
     printf("Número de Pontos Turísticos: %d\n", C1pontosTuristico);
+    printf("Densidade Populacional: %.2f\n", calcularDensidade(C1populacao, C1area));
 
     // PRINTs DA CARTA 2
     printf("\nCarta 2\n");
